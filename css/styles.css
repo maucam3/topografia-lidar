@@ -1,0 +1,228 @@
+:root {
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --primary: #38bdf8;
+    --primary-hover: #0284c7;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border: #334155;
+    --accent: #34d399;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+header {
+    background: #0284c7;
+    color: white;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #e0f2fe;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Workflow Section */
+.workflow-section {
+    margin-bottom: 3rem;
+}
+
+.workflow-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1.5rem;
+}
+
+@media(max-width: 650px) {
+    .workflow-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.steps-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.step-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.step-btn:hover {
+    border-color: var(--primary);
+    color: var(--text-main);
+}
+
+.step-btn.active {
+    background: rgba(56, 189, 248, 0.15);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.step-num {
+    background: var(--border);
+    color: var(--text-main);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.step-btn.active .step-num {
+    background: var(--primary);
+    color: var(--bg-dark);
+}
+
+.step-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.badge {
+    background: rgba(52, 211, 153, 0.15);
+    color: var(--accent);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 0.75rem;
+}
+
+.step-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.step-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+}
+
+.tech-info {
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
+    color: var(--text-muted);
+}
+
+.tech-info span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Simulator Section */
+.sim-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.sim-box {
+    background: #020617;
+    border: 1px dashed var(--border);
+    height: 180px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.sim-box p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.sim-box p span {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.sim-controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.layer-btn {
+    background: var(--border);
+    color: var(--text-main);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+
+.layer-btn.active {
+    background: var(--primary);
+    color: var(--bg-dark);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+}
