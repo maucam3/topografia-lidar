@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levantamiento Topográfico LiDAR | Proyecto Arquitectura</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background: var(--dark); color: white; padding: 3rem 1rem; text-align: center; }
+        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        header p { color: #94a3b8; font-size: 1.1rem; }
+        
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .intro { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); margin-bottom: 2rem; }
+        .intro h2 { color: var(--primary); margin-bottom: 1rem; }
+        
+        .workflow { display: grid; gap: 1.5rem; }
+        .step-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgb(0 0 0 / 0.05); border-left: 5px solid var(--primary); display: flex; gap: 1.5rem; align-items: flex-start; }
+        .step-number { background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; }
+        .step-content h3 { margin-bottom: 0.3rem; color: var(--dark); }
+        .step-content p { color: var(--gray); font-size: 0.95rem; }
+        
+        footer { text-align: center; padding: 2rem; color: var(--gray); font-size: 0.85rem; margin-top: 3rem; border-top: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Levantamiento Topográfico con Drones & LiDAR</h1>
+        <p>Plataforma de visualización del flujo de trabajo tecnológico</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Acerca del Proyecto</h2>
+            <p>Este sistema digital mapea y organiza de forma interactiva las fases clave para la adquisición, procesamiento y modelado de datos geoespaciales aplicados a proyectos arquitectónicos de gran escala mediante tecnología LiDAR aerotransportada.</p>
+        </section>
+
+        <section class="workflow">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Planificación de Vuelo y Georreferenciación</h3>
+                    <p>Diseño de polígonos de cobertura, cálculo de solapes longitudinales y transversales, y configuración de puntos de control en tierra (GCPs) para asegurar precisión centimétrica.</p>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Captura de Datos (Dron + LiDAR)</h3>
+                    <p>Vuelo automatizado del UAV equipado con sensor láser para la emisión de pulsos y captura masiva de nubes de puntos de alta densidad, incluso sobre zonas con vegetación densa.</p>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Procesamiento y Clasificación de Nube de Puntos</h3>
+                    <p>Filtrado de ruido atmosférico, clasificación de retornos (terreno, vegetación, estructuras) y georreferenciación mediante software especializado para generar el Modelo Digital de Elevaciones (MDE).</p>
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Integración y Entregables en Arquitectura</h3>
+                    <p>Exportación de curvas de nivel, ortomosaicos y mallas 3D texturizadas hacia plataformas CAD y BIM para el diseño conceptual y análisis de emplazamiento.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Tecnología para Arquitectura — Plataforma de Flujo Topográfico LiDAR</p>
+    </footer>
+
+</body>
+</html>
